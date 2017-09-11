@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400|Playball');
+
+//---------------------------------------------//
+// Variables
+//---------------------------------------------//
+@base-unit: 6px;
+@max-width: 850px;
+
+@white: #ffffff;
+@almost-black: #434e4e;
+
+@teal: #b4e2d8;
+@gold: #e7e2aa;
+
+@small: 550px;
+@medium: 800px;
+@large: 1200px;
+
+//---------------------------------------------//
+// Mixins
+//---------------------------------------------//
+.shadow() {
+    box-shadow: 0 4px 10px 0 rgb(200, 200, 200);
+}
+
+//---------------------------------------------//
+// Elements
+//---------------------------------------------//
+body {
+    background-color: @white;
+    font-family: "Lato", "Helvetica", sans-serif;
+    font-size: @base-unit * 3;
+    font-weight: 300;
+    line-height: 1.8em;
+    transition: all 0.2s ease;
+}
+
+h1,
+h2,
+h3 {
+    color: @almost-black;
+    display: inline-block;
+    font-family: "Playball", "Georgia", serif;
+}
+
+h1 {
+    font-size: @base-unit * 8;
+    margin: 0 auto;
+    text-align: center;
+    width: 100%;
+
+    @media (min-width: @small) {
+        font-size: @base-unit * 12;
+    }
+}
+
+h2 {
+    font-size: @base-unit * 7;
+    margin-bottom: @base-unit * 3;
+}
+
+p {
+    margin: 0 auto @base-unit * 4;
+    max-width: @max-width;
+
+    a {
+        color: #442be5;
+        border-bottom: 1px solid;
+        text-decoration: none;
+    }
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    margin-bottom: @base-unit * 4;
+}
+
+section {
+    margin-bottom: @base-unit * 10;
+}
+
+//---------------------------------------------//
+// Classes
+//---------------------------------------------//
+nav {
+    background-color: @teal;
+    position: fixed;
+    text-align: center;
+    top: 0;
+    width: 100%;
+
+    ul {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        margin: 0 auto;
+        padding: @base-unit;
+
+        @media (min-width: @medium) {
+            width: 75%;
+        }
+
+        @media (min-width: @large) {
+            width: 50%;
+        }
+    }
+
+    a {
+        color: @almost-black;
+        font-size: @base-unit * 2;
+        font-weight: normal;
+        text-decoration: none;
+        text-transform: uppercase;
+
+        @media (min-width: @small) {
+            font-size: @base-unit * 3;
+        }
+    }
+}
+
+.main {
+    margin: 0 (@base-unit * 4) (@base-unit * 12);
+    max-width: @max-width;
+    padding-top: @base-unit * 10;
+
+    @media (min-width: (@max-width + 50px)) {
+        margin: 0 auto (@base-unit * 12);
+    }
+}
+
+.img-full {
+    display: block;
+    margin: @base-unit * 6 auto;
+    max-width: @max-width;
+    text-align: center;
+    width: 100%;
+}
+
+.divider {
+    background-color: @teal;
+    position: relative;
+    width: 100%;
+    height: @base-unit;
+}
+
+.emoji {
+    display: inline-block;
+    font-size: @base-unit * 3;
+    margin: 0 @base-unit / 2;
+}
+
+.wave {
+    animation: wave 0.4s linear infinite;
+    display: inline-block;
+}
+
+//---------------------------------------------//
+// Utilities
+//---------------------------------------------//
+.display--none {
+    display: none;
+
+    &_medium {
+        display: none;
+        @media (min-width: @medium) {
+            display: inherit;
+        }
+    }
+}
+
+//---------------------------------------------//
+// Animations
+//---------------------------------------------//
+@keyframes wave {
+    0% { transform: rotate(-15deg); }
+    50% { transform: rotate(10deg); }
+    100% { transform: rotate(-15deg); }
+}

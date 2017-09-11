@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400|Playball');
+body {
+  background-color: #ffffff;
+  font-family: "Lato", "Helvetica", sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 1.8em;
+  transition: all 0.2s ease;
+}
+h1,
+h2,
+h3 {
+  color: #434e4e;
+  display: inline-block;
+  font-family: "Playball", "Georgia", serif;
+}
+h1 {
+  font-size: 48px;
+  margin: 0 auto;
+  text-align: center;
+  width: 100%;
+}
+@media (min-width: 550px) {
+  h1 {
+    font-size: 72px;
+  }
+}
+h2 {
+  font-size: 42px;
+  margin-bottom: 18px;
+}
+p {
+  margin: 0 auto 24px;
+  max-width: 850px;
+}
+p a {
+  color: #442be5;
+  border-bottom: 1px solid;
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+header {
+  margin-bottom: 24px;
+}
+section {
+  margin-bottom: 60px;
+}
+nav {
+  background-color: #b4e2d8;
+  position: fixed;
+  text-align: center;
+  top: 0;
+  width: 100%;
+}
+nav ul {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  margin: 0 auto;
+  padding: 6px;
+}
+@media (min-width: 800px) {
+  nav ul {
+    width: 75%;
+  }
+}
+@media (min-width: 1200px) {
+  nav ul {
+    width: 50%;
+  }
+}
+nav a {
+  color: #434e4e;
+  font-size: 12px;
+  font-weight: normal;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+@media (min-width: 550px) {
+  nav a {
+    font-size: 18px;
+  }
+}
+.main {
+  margin: 0 24px 72px;
+  max-width: 850px;
+  padding-top: 60px;
+}
+@media (min-width: 900px) {
+  .main {
+    margin: 0 auto 72px;
+  }
+}
+.img-full {
+  display: block;
+  margin: 36px auto;
+  max-width: 850px;
+  text-align: center;
+  width: 100%;
+}
+.divider {
+  background-color: #b4e2d8;
+  position: relative;
+  width: 100%;
+  height: 6px;
+}
+.emoji {
+  display: inline-block;
+  font-size: 18px;
+  margin: 0 3px;
+}
+.wave {
+  animation: wave 0.4s linear infinite;
+  display: inline-block;
+}
+.display--none {
+  display: none;
+}
+.display--none_medium {
+  display: none;
+}
+@media (min-width: 800px) {
+  .display--none_medium {
+    display: inherit;
+  }
+}
+@keyframes wave {
+  0% {
+    transform: rotate(-15deg);
+  }
+  50% {
+    transform: rotate(10deg);
+  }
+  100% {
+    transform: rotate(-15deg);
+  }
+}
