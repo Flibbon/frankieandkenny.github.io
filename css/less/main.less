@@ -10,6 +10,7 @@
 @almost-black: #727682;
 
 @teal: #b5e3d8;
+@teal-dark: #38BDA0;
 @gold-light: #f3ebcc;
 @gold-dark: #f4d9a1;
 @red: #d85657;
@@ -83,9 +84,13 @@ p {
     text-align: center;
 
     a {
-        color: #442be5;
+        color: @teal-dark;
         border-bottom: 1px solid;
         text-decoration: none;
+
+        &:visited {
+            color: @teal-dark;
+        }
     }
 }
 
