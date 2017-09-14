@@ -3,17 +3,6 @@ const _header			= document.querySelectorAll("[data-el='header']")[0];
 const _navObjects		= document.querySelectorAll("nav a");
 const _countdown		= document.querySelectorAll("[data-el='countdown']")[0];
 
-// Variables
-let _flagIsSticky		= false;
-
-// Constants
-const BASE_UNIT			= 8;
-
-// "Constants"
-let SCREEN_WIDTH		= window.innerWidth;
-let SCREEN_HEIGHT		= window.innerHeight;
-
-
 start();
 
 function start() {

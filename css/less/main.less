@@ -116,8 +116,7 @@ nav {
     z-index: 1;
 
     ul {
-        display: grid;
-        grid-template-columns: repeat(5, 1fr);
+        text-align: center;
         margin: 0 auto;
 
         @media (min-width: @medium) {
@@ -130,6 +129,8 @@ nav {
     }
 
     li {
+        display: inline-block;
+        width: 19%;
         transition: all 0.15s ease;
 
         &:hover {
@@ -143,7 +144,6 @@ nav {
 
     a {
         color: @almost-black;
-        display: inline-block;
         padding: @base-unit 0;
         text-decoration: none;
         text-shadow: 0px 1px 1px @white;
