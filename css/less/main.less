@@ -9,8 +9,7 @@
 @white: #ffffff;
 @almost-black: #727682;
 
-@teal-light: #B8F6E9;
-@teal-dark: #78C8B5;
+@teal: #b5e3d8;
 @gold-light: #f3ebcc;
 @gold-dark: #f4d9a1;
 @red: #d85657;
@@ -23,11 +22,6 @@
 //---------------------------------------------//
 // Mixins
 //---------------------------------------------//
-.gradient() {
-    background-color: @teal-light;
-    background-image: linear-gradient(90deg, @teal-light, @teal-dark);
-}
-
 .shadow() {
     box-shadow: 0 4px 10px 0 rgb(200, 200, 200);
 }
@@ -95,6 +89,10 @@ p {
     }
 }
 
+img {
+    transition: all 0.2s ease;
+}
+
 ul {
     list-style: none;
     margin: 0;
@@ -113,15 +111,11 @@ strong {
 // Classes
 //---------------------------------------------//
 nav {
-    .gradient();
+    background-color: #ffffff;
     font-size: @base-unit * 2;
     font-weight: normal;
-    position: fixed;
     text-align: center;
     text-transform: uppercase;
-    top: 0;
-    width: 100%;
-    z-index: 1;
 
     ul {
         margin: 0 auto;
@@ -142,6 +136,10 @@ nav {
 
         &:hover {
             background-color: @gold-light;
+
+            a {
+                transform: translateY(-2px);
+            }
         }
 
         @media (min-width: @small) {
@@ -152,12 +150,19 @@ nav {
     a {
         color: @almost-black;
         display: inline-block;
-        padding: @base-unit 0;
+        padding: @base-unit + 2px 0 @base-unit;
         text-decoration: none;
-        text-shadow: 0px 1px 1px @white;
+        transition: all 0.15s ease;
         width: 100%;
         height: 100%;
     }
+}
+
+.nav-main {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
 }
 
 .main {
@@ -208,13 +213,12 @@ nav {
     }
 }
 
-a:hover img {
-    opacity: 0.9;
-    transform: scale(1.03);
+a:hover .logo {
+    opacity: 0.75;
 }
 
 .divider--large {
-    .gradient();
+    background-color: @teal;
     position: relative;
     margin-bottom: @base-unit * 6;
     width: 100%;
@@ -226,7 +230,7 @@ a:hover img {
     position: relative;
     margin-bottom: @base-unit * 3;
     width: 100%;
-    height: 2px;
+    height: 3px;
 }
 
 .map {
