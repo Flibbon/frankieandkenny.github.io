@@ -206,8 +206,9 @@ a:hover img {
 }
 @media (min-width: 550px) {
   .size1of2 {
-    width: 40%;
+    margin-bottom: 0;
     padding: 0 4.8%;
+    width: 40%;
   }
 }
 .text-align--center {
