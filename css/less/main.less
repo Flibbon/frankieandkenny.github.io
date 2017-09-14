@@ -15,6 +15,7 @@
 @gold-dark: #f4d9a1;
 @red: #d85657;
 
+@phone: 450px;
 @small: 550px;
 @medium: 800px;
 @large: 1200px;
@@ -39,27 +40,37 @@ body {
     color: @almost-black;
     font-family: "Lato", "Helvetica", sans-serif;
     font-size: @base-unit * 3;
-    font-weight: 300;
+    font-weight: 400;
     line-height: 1.8em;
     transition: all 0.2s ease;
+
+    @media (min-width: @small) {
+        font-weight: 300;
+    }
 }
 
 h1,
 h2,
 h3 {
     display: inline-block;
-    font-size: @base-unit * 8;
+    font-size: @base-unit * 7;
     font-family: "Playball", "Georgia", serif;
     text-align: center;
     width: 100%;
+
+    @media (min-width: @small) {
+        font-size: @base-unit * 8;
+    }
 }
 
 h1 {
     margin: 0 auto @base-unit * 6;
-    text-shadow: 0px 4px 2px @gold-dark;
+    line-height: 1em;
+    text-shadow: 0;
 
     @media (min-width: @small) {
         font-size: @base-unit * 12;
+        text-shadow: 0px 4px 2px @gold-dark;
     }
 }
 
