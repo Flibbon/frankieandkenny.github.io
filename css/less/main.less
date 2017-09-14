@@ -40,13 +40,9 @@ body {
     color: @almost-black;
     font-family: "Lato", "Helvetica", sans-serif;
     font-size: @base-unit * 3;
-    font-weight: 400;
+    font-weight: 300;
     line-height: 1.8em;
     transition: all 0.2s ease;
-
-    @media (min-width: @small) {
-        font-weight: 300;
-    }
 }
 
 h1,
@@ -64,12 +60,13 @@ h3 {
 }
 
 h1 {
-    margin: 0 auto @base-unit * 6;
+    margin: 0 auto @base-unit * 4;
     line-height: 1em;
     text-shadow: 0;
 
     @media (min-width: @small) {
         font-size: @base-unit * 12;
+        margin: 0 auto @base-unit * 6;
         text-shadow: 0px 4px 2px @gold-dark;
     }
 }
@@ -174,11 +171,15 @@ nav {
 
 .img--full {
     display: block;
-    margin: 0 auto @base-unit * 8;
+    margin: 0 auto @base-unit * 2;
     max-width: @max-width;
     padding-top: @base-unit * 8;
     text-align: center;
     width: 100%;
+
+    @media (min-width: @small) {
+        margin: 0 auto @base-unit * 4;
+    }
 }
 
 .img--half {
