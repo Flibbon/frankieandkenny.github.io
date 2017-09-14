@@ -1,6 +1,6 @@
 // Storage
 const _header			= document.querySelectorAll("[data-el='header']")[0];
-const _navObjects		= document.querySelectorAll("[data-nav-sticky]");
+const _navObjects		= document.querySelectorAll("nav a");
 const _countdown		= document.querySelectorAll("[data-el='countdown']")[0];
 
 // Variables
@@ -35,28 +35,15 @@ function countdown() {
 	_countdown.innerHTML = days;
 }
 
-/*
- * INPUT - on input scroll
- */
-window.addEventListener("scroll", (pEvent) => {
-	if(!_header || !_navObjects) { return; }
+$(document).ready(function() {
+	$(".nav-main a").bind("click",function(event) {
 
-	// Sets whether nav bar is in sticky mode or not
-	let tHasChanged		= false;
-	let tScrollTop		= pEvent.target.scrollingElement.scrollTop;
-	let tHeaderHeight	= _header.clientHeight + BASE_UNIT;
+			var $anchor = $(this);
 
-	if(!_flagIsSticky && tScrollTop > tHeaderHeight) {
-		_flagIsSticky	= true;
-		tHasChanged		= true;
-	} else if(_flagIsSticky && tScrollTop <= tHeaderHeight) {
-		_flagIsSticky	= false;
-		tHasChanged		= true;
-	};
+			$("html, body").stop().animate({
+				scrollTop: $($anchor.attr("href")).offset().top
+			}, 300,"easeInOutCirc");
 
-	if(tHasChanged) {
-		_navObjects.forEach(iNavObject => {
-			iNavObject.setAttribute("data-nav-sticky", "" + _flagIsSticky);
+			event.preventDefault();
 		});
-	}
-}, { "passive": true });
+  });

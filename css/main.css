@@ -38,7 +38,7 @@ h3 {
 }
 p {
   margin: 0 auto 12px;
-  max-width: 850px;
+  max-width: 600px;
   text-align: center;
 }
 p a {
@@ -85,7 +85,6 @@ nav ul {
   }
 }
 nav li {
-  padding: 6px;
   transition: all 0.15s ease;
 }
 nav li:hover {
@@ -99,6 +98,7 @@ nav li:hover {
 nav a {
   color: #727682;
   display: inline-block;
+  padding: 6px 0;
   text-decoration: none;
   text-shadow: 0px 1px 1px #ffffff;
   width: 100%;
@@ -134,6 +134,19 @@ nav a {
 }
 .img--half_reception {
   background-image: url("../img/reception.jpg");
+}
+.logo {
+  margin: 0 auto;
+  width: 70%;
+}
+@media (min-width: 550px) {
+  .logo {
+    width: 40%;
+  }
+}
+a:hover img {
+  opacity: 0.9;
+  transform: scale(1.03);
 }
 .divider--large {
   background-color: #B8F6E9;
@@ -183,6 +196,9 @@ nav a {
 .margin-bottom--lv6 {
   margin-bottom: 36px;
 }
+.margin-bottom--lv10 {
+  margin-bottom: 60px;
+}
 .size1of2 {
   display: inline-block;
   margin-bottom: 12px;
@@ -193,6 +209,9 @@ nav a {
     width: 40%;
     padding: 0 4.8%;
   }
+}
+.text-align--center {
+  text-align: center;
 }
 @keyframes wave {
   0% {

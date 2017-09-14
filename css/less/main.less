@@ -77,7 +77,7 @@ h3 {
 
 p {
     margin: 0 auto @base-unit * 2;
-    max-width: @max-width;
+    max-width: 600px;
     text-align: center;
 
     a {
@@ -130,7 +130,6 @@ nav {
     }
 
     li {
-        padding: @base-unit;
         transition: all 0.15s ease;
 
         &:hover {
@@ -145,6 +144,7 @@ nav {
     a {
         color: @almost-black;
         display: inline-block;
+        padding: @base-unit 0;
         text-decoration: none;
         text-shadow: 0px 1px 1px @white;
         width: 100%;
@@ -185,6 +185,20 @@ nav {
     &_reception {
         background-image: url("../img/reception.jpg");
     }
+}
+
+.logo {
+    margin: 0 auto;
+    width: 70%;
+
+    @media (min-width: @small) {
+        width: 40%;
+    }
+}
+
+a:hover img {
+    opacity: 0.9;
+    transform: scale(1.03);
 }
 
 .divider--large {
@@ -242,6 +256,10 @@ nav {
     margin-bottom: @base-unit * 6;
 }
 
+.margin-bottom--lv10 {
+    margin-bottom: @base-unit * 10;
+}
+
 .size1of2 {
     display: inline-block;
     margin-bottom: @base-unit * 2;
@@ -251,6 +269,10 @@ nav {
         width: 40%;
         padding: 0 4.8%;
     }
+}
+
+.text-align--center {
+    text-align: center;
 }
 
 //---------------------------------------------//
