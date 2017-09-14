@@ -70,8 +70,6 @@ nav {
   z-index: 1;
 }
 nav ul {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
   margin: 0 auto;
 }
 @media (min-width: 800px) {
@@ -85,7 +83,9 @@ nav ul {
   }
 }
 nav li {
+  display: inline-block;
   transition: all 0.15s ease;
+  width: 19%;
 }
 nav li:hover {
   background-color: #f3ebcc;
