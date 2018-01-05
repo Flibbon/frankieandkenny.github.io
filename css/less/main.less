@@ -98,26 +98,9 @@ img {
     transition: all 0.2s ease;
 }
 
-ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-section {
-    margin-bottom: @base-unit * 4;
-}
-
-strong {
-    font-weight: bold;
-}
-
-//---------------------------------------------//
-// Classes
-//---------------------------------------------//
 nav {
     background-color: #ffffff;
-    font-size: @base-unit * 2;
+    font-size: @base-unit * 1.75;
     font-weight: normal;
     text-align: center;
     text-transform: uppercase;
@@ -126,18 +109,18 @@ nav {
         margin: 0 auto;
 
         @media (min-width: @medium) {
-            width: 75%;
+            width: 95%;
         }
 
         @media (min-width: @large) {
-            width: 50%;
+            width: 70%;
         }
     }
 
     li {
         display: inline-block;
         transition: all 0.15s ease;
-        width: 19%;
+        width: 16%;
 
         &:hover {
             background-color: @gold-light;
@@ -162,6 +145,49 @@ nav {
         height: 100%;
     }
 }
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+section {
+    margin-bottom: @base-unit * 4;
+}
+
+strong {
+    font-weight: bold;
+}
+
+form {
+    margin: 0 auto @base-unit * 2;
+    max-width: 550px;
+    text-align: center;
+}
+
+label {
+    display: block;
+    font-weight: 400;
+    margin-bottom: @base-unit * 4;
+    padding: 0 10%;
+    text-align: left;
+}
+
+input {
+    display: block;
+    margin-top: @base-unit;
+    width: 100%;
+}
+
+select {
+    display: block;
+    margin-top: @base-unit;
+}
+
+//---------------------------------------------//
+// Classes
+//---------------------------------------------//
 
 .nav-main {
     position: fixed;
@@ -214,12 +240,13 @@ nav {
     width: 70%;
 
     @media (min-width: @small) {
-        width: 40%;
+        width: 80%;
     }
 }
 
 a:hover .logo {
     opacity: 0.75;
+    transform: scale(1.05);
 }
 
 .divider--large {
@@ -295,6 +322,23 @@ a:hover .logo {
 
 .text-align--center {
     text-align: center;
+}
+
+.text-align--left {
+    text-align: left;
+}
+
+.center {
+    margin: 0 auto;
+    width: 100%;
+}
+
+.padding--lv0 {
+    padding: 0;
+}
+
+.font-weight--light {
+    font-weight: 300;
 }
 
 //---------------------------------------------//

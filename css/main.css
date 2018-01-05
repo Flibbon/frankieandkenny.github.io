@@ -62,20 +62,9 @@ p a:visited {
 img {
   transition: all 0.2s ease;
 }
-ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-section {
-  margin-bottom: 24px;
-}
-strong {
-  font-weight: bold;
-}
 nav {
   background-color: #ffffff;
-  font-size: 12px;
+  font-size: 10.5px;
   font-weight: normal;
   text-align: center;
   text-transform: uppercase;
@@ -85,18 +74,18 @@ nav ul {
 }
 @media (min-width: 800px) {
   nav ul {
-    width: 75%;
+    width: 95%;
   }
 }
 @media (min-width: 1200px) {
   nav ul {
-    width: 50%;
+    width: 70%;
   }
 }
 nav li {
   display: inline-block;
   transition: all 0.15s ease;
-  width: 19%;
+  width: 16%;
 }
 nav li:hover {
   background-color: #f3ebcc;
@@ -117,6 +106,38 @@ nav a {
   transition: all 0.15s ease;
   width: 100%;
   height: 100%;
+}
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+section {
+  margin-bottom: 24px;
+}
+strong {
+  font-weight: bold;
+}
+form {
+  margin: 0 auto 12px;
+  max-width: 550px;
+  text-align: center;
+}
+label {
+  display: block;
+  font-weight: 400;
+  margin-bottom: 24px;
+  padding: 0 10%;
+  text-align: left;
+}
+input {
+  display: block;
+  margin-top: 6px;
+  width: 100%;
+}
+select {
+  display: block;
+  margin-top: 6px;
 }
 .nav-main {
   position: fixed;
@@ -166,11 +187,12 @@ nav a {
 }
 @media (min-width: 550px) {
   .logo {
-    width: 40%;
+    width: 80%;
   }
 }
 a:hover .logo {
   opacity: 0.75;
+  transform: scale(1.05);
 }
 .divider--large {
   background-color: #b5e3d8;
@@ -236,6 +258,19 @@ a:hover .logo {
 }
 .text-align--center {
   text-align: center;
+}
+.text-align--left {
+  text-align: left;
+}
+.center {
+  margin: 0 auto;
+  width: 100%;
+}
+.padding--lv0 {
+  padding: 0;
+}
+.font-weight--light {
+  font-weight: 300;
 }
 @keyframes wave {
   0% {
