@@ -168,21 +168,63 @@ form {
 
 label {
     display: block;
+    font-size: @base-unit * 2.5;
     font-weight: 400;
     margin-bottom: @base-unit * 4;
     padding: 0 10%;
     text-align: left;
+    transition: all 0.2s ease;
+
+    @media (min-width: @small) {
+        font-size: @base-unit * 3;
+    }
 }
 
 input {
+    border: 2px solid @teal;
+    border-radius: 3px;
+    color: @almost-black;
     display: block;
+    font-family: "Lato", "Helvetica", sans-serif;
+    font-size: @base-unit * 3;
+    font-weight: 300;
+    min-height: 35px;
     margin-top: @base-unit;
-    width: 100%;
+    padding: 1% 2%;
+    transition: all 0.2s ease;
+    width: 96%;
+
+    &:hover {
+        border-color: @teal-dark;
+    }
+
+    &:focus {
+        border-color: @teal-dark;
+        outline: none;
+    }
 }
 
-select {
-    display: block;
-    margin-top: @base-unit;
+button {
+    background-color: @teal;
+    border: none;
+    border-radius: 3px;
+    color: @almost-black;
+    cursor: pointer;
+    font-family: "Lato", "Helvetica", sans-serif;
+    font-size: @base-unit * 3;
+    padding: 10px 15px;
+    transition: all 0.2s ease;
+
+    &:hover,
+    &:focus {
+        background-color: darken(@teal, 8%);
+        outline: none;
+        transform: scale(1.05);
+    }
+
+    &:active {
+        transform: scale(.95);
+    }
 }
 
 //---------------------------------------------//
@@ -286,6 +328,33 @@ a:hover .logo {
     display: inline-block;
 }
 
+.radio {
+    margin-bottom: @base-unit * .5;
+    padding: 0 10%;
+    text-align: left;
+
+    label {
+        cursor: pointer;
+        display: inline;
+        padding: 0;
+        vertical-align: middle;
+    }
+
+    input {
+        cursor: pointer;
+        display: inline;
+        margin: 0 5px 0 0;
+        vertical-align: middle;
+        width: auto;
+    }
+}
+
+.optional {
+    float: right;
+    font-size: @base-unit * 2.5;
+    font-weight: 300;
+}
+
 //---------------------------------------------//
 // Utilities
 //---------------------------------------------//
@@ -298,6 +367,14 @@ a:hover .logo {
             display: inherit;
         }
     }
+}
+
+.display--inline {
+    display: inline;
+}
+
+.margin-bottom--lv4 {
+    margin-bottom: @base-unit * 4;
 }
 
 .margin-bottom--lv6 {

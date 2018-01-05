@@ -125,19 +125,58 @@ form {
 }
 label {
   display: block;
+  font-size: 15px;
   font-weight: 400;
   margin-bottom: 24px;
   padding: 0 10%;
   text-align: left;
+  transition: all 0.2s ease;
+}
+@media (min-width: 550px) {
+  label {
+    font-size: 18px;
+  }
 }
 input {
+  border: 2px solid #b5e3d8;
+  border-radius: 3px;
+  color: #727682;
   display: block;
+  font-family: "Lato", "Helvetica", sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  min-height: 35px;
   margin-top: 6px;
-  width: 100%;
+  padding: 1% 2%;
+  transition: all 0.2s ease;
+  width: 96%;
 }
-select {
-  display: block;
-  margin-top: 6px;
+input:hover {
+  border-color: #38BDA0;
+}
+input:focus {
+  border-color: #38BDA0;
+  outline: none;
+}
+button {
+  background-color: #b5e3d8;
+  border: none;
+  border-radius: 3px;
+  color: #727682;
+  cursor: pointer;
+  font-family: "Lato", "Helvetica", sans-serif;
+  font-size: 18px;
+  padding: 10px 15px;
+  transition: all 0.2s ease;
+}
+button:hover,
+button:focus {
+  background-color: #97d8c8;
+  outline: none;
+  transform: scale(1.05);
+}
+button:active {
+  transform: scale(0.95);
 }
 .nav-main {
   position: fixed;
@@ -227,6 +266,29 @@ a:hover .logo {
   animation: wave 0.4s linear infinite;
   display: inline-block;
 }
+.radio {
+  margin-bottom: 3px;
+  padding: 0 10%;
+  text-align: left;
+}
+.radio label {
+  cursor: pointer;
+  display: inline;
+  padding: 0;
+  vertical-align: middle;
+}
+.radio input {
+  cursor: pointer;
+  display: inline;
+  margin: 0 5px 0 0;
+  vertical-align: middle;
+  width: auto;
+}
+.optional {
+  float: right;
+  font-size: 15px;
+  font-weight: 300;
+}
 .display--none {
   display: none;
 }
@@ -237,6 +299,12 @@ a:hover .logo {
   .display--none_medium {
     display: inherit;
   }
+}
+.display--inline {
+  display: inline;
+}
+.margin-bottom--lv4 {
+  margin-bottom: 24px;
 }
 .margin-bottom--lv6 {
   margin-bottom: 36px;

@@ -58,7 +58,7 @@
 					</div>
 				</div>
 				<div class="divider--small margin-bottom--lv6"></div>
-				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2915.721062290868!2d-76.15511288450041!3d43.04730007914687!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d9f3b92aaf0aaf%3A0x87e862bdfff46e48!2sLandmark+Theatre!5e0!3m2!1sen!2sus!4v1505175493968" height="300px" frameborder="0" allowfullscreen class="map margin-bottom--lv6"></iframe>
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2915.721062290868!2d-76.15511288450041!3d43.04730007914687!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d9f3b92aaf0aaf%3A0x87e862bdfff46e48!2sLandmark+Theatre!5e0!3m2!1sen!2sus!4v1505175493968" height="300px" frameborder="0" allowfullscreen class="map"></iframe>
 			</section>
 		</section>
 		<section>
@@ -76,7 +76,7 @@
 					<p class="font-weight--normal margin-bottom--lv6">
 						May 4th 2018
 					</p>
-					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3754.4310596469536!2d-76.15395361908173!3d43.05828409671123!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d9f3b44da724c5%3A0x44f61efbe6546e51!2sFrancesca&#39;s+Cucina!5e0!3m2!1sen!2sus!4v1515115818230" height="300px" frameborder="0" style="border:0" allowfullscreen class="map margin-bottom--lv6"></iframe>
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3754.4310596469536!2d-76.15395361908173!3d43.05828409671123!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d9f3b44da724c5%3A0x44f61efbe6546e51!2sFrancesca&#39;s+Cucina!5e0!3m2!1sen!2sus!4v1515115818230" height="300px" frameborder="0" style="border:0" allowfullscreen class="map"></iframe>
 				</div>
 				<div class="size1of2">
 					<h3>Accommodations</h3>
@@ -89,7 +89,7 @@
 					<p class="font-weight--normal margin-bottom--lv6">
 						Blocks reserved for the 4th and 5th
 					</p>
-					<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11662.886279623677!2d-76.1538505!3d43.0472894!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x5032ddc132b7d43c!2sJefferson+Clinton+Hotel!5e0!3m2!1sen!2sus!4v1515115718161" height="300px" frameborder="0" style="border:0" allowfullscreen class="map margin-bottom--lv6"></iframe>
+					<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11662.886279623677!2d-76.1538505!3d43.0472894!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x5032ddc132b7d43c!2sJefferson+Clinton+Hotel!5e0!3m2!1sen!2sus!4v1515115718161" height="300px" frameborder="0" style="border:0" allowfullscreen class="map"></iframe>
 				</div>
 			</header>
 			<div>
@@ -130,25 +130,27 @@
 				<form>
 					<div class="margin-bottom--lv6">
 						<label for="name">Name(s)
-							<input id="name" type="text"/>
+							<input id="name" name="name" type="text"/>
 						</label>
 
-						<label for="attending">Attending?
-							<input id="attending" type="checkbox"/>
+						<div class="margin-bottom--lv4">
+							<div class="radio">
+								<input id="attending" name="attending" type="radio" value="Attending" checked/>
+								<label for="attending">Accepts</label>
+							</div>
+
+							<div class="radio">
+								<input id="declining" name="attending" type="radio" value="Declining"/>
+								<label for="declining">Declines</label>
+							</div>
+						</div>
+
+						<label for="diet">Any dietary restrictions? <span class="optional">Optional</span>
+							<input id="diet" name="diet" type="text"/>
 						</label>
 
-						<label for="diet">Dietary Restrictions
-							<select id="diet">
-								<option selected>None</option>
-								<option>Vegan</option>
-								<option>Vegetarian</option>
-								<option>Gluten Free</option>
-								<option>Dairy Free</option>
-							</select>
-						</label>
-
-						<label for="song">What song will make you dance? <span class="font-weight--light">(Optional)</span>
-							<input id="song"/>
+						<label for="song">I promise to dance if you play... <span class="optional">Optional</span>
+							<input id="song" name="song"/>
 						</label>
 					</div>
 
