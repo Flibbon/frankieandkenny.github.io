@@ -180,7 +180,7 @@ label {
     }
 }
 
-input {
+input, textarea {
     border: 2px solid @teal;
     border-radius: 3px;
     color: @almost-black;
@@ -190,6 +190,7 @@ input {
     font-weight: 300;
     min-height: 35px;
     margin-top: @base-unit;
+    margin-bottom: 4px;
     padding: 1% 2%;
     transition: all 0.2s ease;
     width: 96%;
@@ -225,6 +226,16 @@ button {
     &:active {
         transform: scale(.95);
     }
+}
+
+::-webkit-input-placeholder {
+    color: darkgray;
+    font-style: italic;
+}
+
+::-moz-placeholder {
+    color: darkgray;
+    font-style: italic;
 }
 
 //---------------------------------------------//
@@ -343,7 +354,7 @@ a:hover .logo {
     input {
         cursor: pointer;
         display: inline;
-        margin: 0 5px 0 0;
+        margin: 0 10px 0 0;
         vertical-align: middle;
         width: auto;
     }
@@ -353,6 +364,13 @@ a:hover .logo {
     float: right;
     font-size: @base-unit * 2.5;
     font-weight: 300;
+}
+
+.field-help {
+    font-size: @base-unit * 2.5;
+    font-weight: 300;
+    line-height: 1.4em;
+    text-align: left;
 }
 
 //---------------------------------------------//
@@ -392,8 +410,8 @@ a:hover .logo {
 
     @media (min-width: @small) {
         margin-bottom: 0;
-        padding: 0 4.8%;
-        width: 40%;
+        padding: 0 1.8%;
+        width: 46%;
     }
 }
 
