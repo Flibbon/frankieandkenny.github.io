@@ -14,8 +14,8 @@
 					<li><a href="#home">Home</a></li>
 					<li><a href="#wedding">Wedding</a></li>
 					<li><a href="#hotel">Hotel</a></li>
-					<li><a href="#registry">Registry</a></li>
 					<li><a href="#rsvp">RSVP</a></li>
+					<li><a href="#registry">Registry</a></li>
 					<li><a href="#contact">Contact</a></li>
 				</ul>
 			</nav>
@@ -81,6 +81,46 @@
 			</section>
 		</section>
 		<section>
+			<header id="rsvp">
+				<h2>RSVP</h2>
+				<div class="divider--large"></div>
+			</header>
+			<div class="center text-align--center padding--lv0">
+				<form>
+					<div class="margin-bottom--lv6">
+						<label for="name">Name(s):
+							<textarea id="name" name="name" rows="2"></textarea>
+							<p class="field-help">
+								Please list the names of yourself and all guests in your party.
+							</p>
+						</label>
+
+						<div class="margin-bottom--lv4">
+							<div class="radio">
+								<input id="attending" name="attending" type="radio" value="Attending" checked/>
+								<label for="attending">Accepts with pleasure</label>
+							</div>
+
+							<div class="radio">
+								<input id="declining" name="attending" type="radio" value="Declining"/>
+								<label for="declining">Declines with regret</label>
+							</div>
+						</div>
+
+						<label for="copy">Send me a copy of my response: <span class="optional">Optional</span>
+							<input id="copy" name="copy" type="email" placeholder="me@example.com"/>
+						</label>
+
+						<label for="song">I promise to dance if you play: <span class="optional">Optional</span>
+							<input id="song" name="song"/>
+						</label>
+					</div>
+
+					<button type="submit">Submit</button>
+				</form>
+			</div>
+		</section>
+		<section>
 			<header id="registry">
 				<h2>Registry</h2>
 				<div class="divider--large"></div>
@@ -102,46 +142,6 @@
 					</div>
 				</div>
 			</section>
-		</section>
-		<section>
-			<header id="rsvp">
-				<h2>RSVP</h2>
-				<div class="divider--large"></div>
-			</header>
-			<div class="center text-align--center padding--lv0">
-				<form>
-					<div class="margin-bottom--lv6">
-						<label for="name">Name(s):
-							<textarea id="name" name="name"></textarea>
-							<p class="field-help">
-								Please list the names of yourself and all guests in your party.
-							</p>
-						</label>
-
-						<div class="margin-bottom--lv4">
-							<div class="radio">
-								<input id="attending" name="attending" type="radio" value="Attending" checked/>
-								<label for="attending">Accepts with pleasure</label>
-							</div>
-
-							<div class="radio">
-								<input id="declining" name="attending" type="radio" value="Declining"/>
-								<label for="declining">Declines with regret</label>
-							</div>
-						</div>
-
-						<!-- <label for="copy">Send me a copy of my response: <span class="optional">Optional</span>
-							<input id="copy" name="copy" type="email" placeholder="me@example.com"/>
-						</label> -->
-
-						<label for="song">I promise to dance if you play: <span class="optional">Optional</span>
-							<input id="song" name="song"/>
-						</label>
-					</div>
-
-					<button type="submit">Submit</button>
-				</form>
-			</div>
 		</section>
 		<section>
 			<header id="contact">
