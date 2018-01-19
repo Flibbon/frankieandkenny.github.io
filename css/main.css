@@ -232,6 +232,12 @@ button:active {
 .img--half_reception {
   background-image: url("../img/reception.jpg");
 }
+.img--half_hotel_jc {
+  background-image: url("../img/jefferson-clinton.jpg");
+}
+.img--half_hotel_hs {
+  background-image: url("../img/hotel-syracuse.jpg");
+}
 .logo {
   margin: 0 auto;
   width: 70%;
@@ -266,7 +272,7 @@ a:hover .logo {
 }
 @media (min-width: 550px) {
   .map {
-    width: 80%;
+    width: 100%;
   }
 }
 .emoji {
@@ -306,6 +312,10 @@ a:hover .logo {
   font-weight: 300;
   line-height: 1.4em;
   text-align: left;
+}
+.text-block {
+  font-size: 16.5px;
+  line-height: 1.4em;
 }
 .display--none {
   display: none;

@@ -51,6 +51,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/img\/hotel-syracuse.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 700553,
+		"inputAbbreviatedPath": "\/img\/hotel-syracuse.jpg",
+		"outputAbbreviatedPath": "\/img\/hotel-syracuse.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/img\/illo.jpeg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -58,6 +69,17 @@
 		"initialSize": 233465,
 		"inputAbbreviatedPath": "\/img\/illo.jpeg",
 		"outputAbbreviatedPath": "\/img\/illo.jpeg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/jefferson-clinton.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 678507,
+		"inputAbbreviatedPath": "\/img\/jefferson-clinton.jpg",
+		"outputAbbreviatedPath": "\/img\/jefferson-clinton.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
