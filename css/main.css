@@ -79,7 +79,7 @@ nav ul {
 }
 @media (min-width: 1200px) {
   nav ul {
-    width: 70%;
+    width: 75%;
   }
 }
 nav li {
@@ -102,6 +102,8 @@ nav li:hover a {
 @media (min-width: 800px) {
   nav li {
     font-size: 18px;
+    margin: 0 1.5%;
+    padding: 0 1.5%;
   }
 }
 nav a {
