@@ -85,7 +85,8 @@ nav ul {
 nav li {
   display: inline-block;
   transition: all 0.15s ease;
-  width: 16%;
+  margin: 0 1%;
+  padding: 0 1%;
 }
 nav li:hover {
   background-color: #f3ebcc;
@@ -94,6 +95,11 @@ nav li:hover a {
   transform: translateY(-1px);
 }
 @media (min-width: 550px) {
+  nav li {
+    font-size: 15px;
+  }
+}
+@media (min-width: 800px) {
   nav li {
     font-size: 18px;
   }
@@ -270,11 +276,6 @@ a:hover .logo {
   margin: 0 auto;
   width: 100%;
 }
-@media (min-width: 550px) {
-  .map {
-    width: 100%;
-  }
-}
 .emoji {
   display: inline-block;
   font-size: 18px;
@@ -304,8 +305,13 @@ a:hover .logo {
 }
 .optional {
   float: right;
-  font-size: 15px;
+  font-size: 13.5px;
   font-weight: 300;
+}
+@media (min-width: 550px) {
+  .optional {
+    font-size: 15px;
+  }
 }
 .field-help {
   font-size: 15px;

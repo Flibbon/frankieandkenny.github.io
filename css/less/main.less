@@ -120,7 +120,8 @@ nav {
     li {
         display: inline-block;
         transition: all 0.15s ease;
-        width: 16%;
+        margin: 0 1%;
+        padding: 0 1%;
 
         &:hover {
             background-color: @gold-light;
@@ -131,6 +132,10 @@ nav {
         }
 
         @media (min-width: @small) {
+            font-size: @base-unit * 2.5;
+        }
+
+        @media (min-width: @medium) {
             font-size: @base-unit * 3;
         }
     }
@@ -330,10 +335,6 @@ a:hover .logo {
     display: block;
     margin: 0 auto;
     width: 100%;
-
-    @media (min-width: @small) {
-        width: 100%;
-    }
 }
 
 .emoji {
@@ -370,8 +371,12 @@ a:hover .logo {
 
 .optional {
     float: right;
-    font-size: @base-unit * 2.5;
+    font-size: @base-unit * 2.25;
     font-weight: 300;
+
+    @media (min-width: @small) {
+        font-size: @base-unit * 2.5;
+    }
 }
 
 .field-help {
