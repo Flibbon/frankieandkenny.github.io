@@ -396,6 +396,18 @@ a:hover .logo {
 //---------------------------------------------//
 // Utilities
 //---------------------------------------------//
+.size1of2 {
+    display: inline-block;
+    margin-bottom: @base-unit * 2;
+    width: 100%;
+
+    @media (min-width: @small) {
+        margin-bottom: 0;
+        padding: 0 1.8%;
+        width: 46%;
+    }
+}
+
 .display--none {
     display: none;
 
@@ -421,18 +433,6 @@ a:hover .logo {
 
 .margin-bottom--lv10 {
     margin-bottom: @base-unit * 10;
-}
-
-.size1of2 {
-    display: inline-block;
-    margin-bottom: @base-unit * 2;
-    width: 100%;
-
-    @media (min-width: @small) {
-        margin-bottom: 0;
-        padding: 0 1.8%;
-        width: 46%;
-    }
 }
 
 .text-align--center {

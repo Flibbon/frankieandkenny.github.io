@@ -325,6 +325,18 @@ a:hover .logo {
   font-size: 16.5px;
   line-height: 1.4em;
 }
+.size1of2 {
+  display: inline-block;
+  margin-bottom: 12px;
+  width: 100%;
+}
+@media (min-width: 550px) {
+  .size1of2 {
+    margin-bottom: 0;
+    padding: 0 1.8%;
+    width: 46%;
+  }
+}
 .display--none {
   display: none;
 }
@@ -347,18 +359,6 @@ a:hover .logo {
 }
 .margin-bottom--lv10 {
   margin-bottom: 60px;
-}
-.size1of2 {
-  display: inline-block;
-  margin-bottom: 12px;
-  width: 100%;
-}
-@media (min-width: 550px) {
-  .size1of2 {
-    margin-bottom: 0;
-    padding: 0 1.8%;
-    width: 46%;
-  }
 }
 .text-align--center {
   text-align: center;
