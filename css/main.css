@@ -248,11 +248,11 @@ button:active {
 }
 .logo {
   margin: 0 auto;
-  width: 70%;
+  width: 60%;
 }
 @media (min-width: 550px) {
   .logo {
-    width: 80%;
+    width: 70%;
   }
 }
 a:hover .logo {
