@@ -79,14 +79,14 @@ nav ul {
 }
 @media (min-width: 1200px) {
   nav ul {
-    width: 75%;
+    width: 80%;
   }
 }
 nav li {
   display: inline-block;
   transition: all 0.15s ease;
   margin: 0 1%;
-  padding: 0 1%;
+  padding: 0 2%;
 }
 nav li:hover {
   background-color: #f3ebcc;
@@ -102,8 +102,8 @@ nav li:hover a {
 @media (min-width: 800px) {
   nav li {
     font-size: 18px;
-    margin: 0 1.5%;
-    padding: 0 1.5%;
+    margin: 0 1%;
+    padding: 0 2%;
   }
 }
 nav a {
