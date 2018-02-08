@@ -324,6 +324,7 @@ a:hover .logo {
 .text-block {
   font-size: 16.5px;
   line-height: 1.4em;
+  max-width: 450px;
 }
 .size1of2 {
   display: inline-block;
